@@ -326,6 +326,10 @@ img { max-width: 100%; display: block; }
   padding: 80px 0;
 }
 
+.page-section {
+  padding-top: 100px;
+}
+
 .section-title {
   font-size: 22px;
   font-weight: 600;
