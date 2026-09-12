@@ -1,0 +1,21 @@
+{
+  "name": "Shivaye Modi - Software Developer Portfolio",
+  "short_name": "Shivaye Modi",
+  "description": "Portfolio of Shivaye Modi - Software Developer specializing in .NET, WPF, CAD development, machine learning, and computer vision.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#010e1b",
+  "theme_color": "#12d640",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
