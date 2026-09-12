@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Shivaye Modi</title>
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <div class="scanlines"></div>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">$ shivaye<span class="blink">_</span></a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="about.html" class="nav-link"># about</a></li>
+        <li><a href="skills.html" class="nav-link"># skills</a></li>
+        <li><a href="experience.html" class="nav-link"># experience</a></li>
+        <li><a href="projects.html" class="nav-link"># projects</a></li>
+        <li><a href="contact.html" class="nav-link active"># contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="section page-section">
+    <div class="container">
+      <h2 class="section-title"><span class="text-muted">#</span> contact</h2>
+      <div class="contact-grid">
+        <div class="terminal-window">
+          <div class="terminal-header">
+            <div class="terminal-dots">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <span class="terminal-title">contact.sh</span>
+          </div>
+          <div class="terminal-body">
+            <p class="terminal-line"><span class="prompt">$</span> cat contact.txt</p>
+            <p class="contact-info">Feel free to reach out for collaborations or just a friendly hello!</p>
+            <div class="contact-links">
+              <a href="mailto:shivayemodi@gmail.com" class="contact-link">
+                <span class="prompt">></span> email shivayemodi@gmail.com
+              </a>
+              <a href="https://www.linkedin.com/in/shivaye-modi-44a3631b2" target="_blank" class="contact-link">
+                <span class="prompt">></span> linkedin /in/shivaye-modi
+              </a>
+              <a href="https://www.github.com/ShivayeModi" target="_blank" class="contact-link">
+                <span class="prompt">></span> github /ShivayeModi
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="contact-visitor">
+          <p class="text-muted">Total visitors:</p>
+          <p class="visitor-count" id="visitor-count">...</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    var navToggle = document.getElementById("nav-toggle");
+    var navMenu = document.getElementById("nav-menu");
+    if (navToggle && navMenu) {
+      navToggle.addEventListener("click", function() { navMenu.classList.toggle("active"); });
+    }
+    (async function() {
+      var el = document.getElementById("visitor-count");
+      if (!el) return;
+      try {
+        var domain = encodeURIComponent(window.location.hostname);
+        var timezone = encodeURIComponent(Intl.DateTimeFormat().resolvedOptions().timeZone);
+        var res = await fetch("https://visitor.6developer.com/visit?domain=" + domain + "&timezone=" + timezone);
+        var data = await res.json();
+        el.textContent = data.totalCount;
+      } catch (e) { el.textContent = "N/A"; }
+    })();
+  </script>
+</body>
+</html>

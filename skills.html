@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills - Shivaye Modi</title>
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <div class="scanlines"></div>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">$ shivaye<span class="blink">_</span></a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="about.html" class="nav-link"># about</a></li>
+        <li><a href="skills.html" class="nav-link active"># skills</a></li>
+        <li><a href="experience.html" class="nav-link"># experience</a></li>
+        <li><a href="projects.html" class="nav-link"># projects</a></li>
+        <li><a href="contact.html" class="nav-link"># contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="section page-section">
+    <div class="container">
+      <h2 class="section-title"><span class="text-muted">#</span> skills</h2>
+      <div class="terminal-window">
+        <div class="terminal-header">
+          <div class="terminal-dots">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <span class="terminal-title">skills.txt</span>
+        </div>
+        <div class="terminal-body">
+          <div class="skill-category">
+            <p class="terminal-line"><span class="prompt">$</span> cat languages.txt</p>
+            <div class="skill-tags">
+              <span class="skill-tag">C#</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">Swift</span>
+              <span class="skill-tag">Objective-C</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">HTML/CSS</span>
+              <span class="skill-tag">SQL</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <p class="terminal-line"><span class="prompt">$</span> cat frameworks.txt</p>
+            <div class="skill-tags">
+              <span class="skill-tag">.NET</span>
+              <span class="skill-tag">WPF</span>
+              <span class="skill-tag">ASP.NET Core</span>
+              <span class="skill-tag">Entity Framework</span>
+              <span class="skill-tag">TensorFlow</span>
+              <span class="skill-tag">OpenCV</span>
+              <span class="skill-tag">NumPy</span>
+              <span class="skill-tag">Scikit-learn</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <p class="terminal-line"><span class="prompt">$</span> cat tools.txt</p>
+            <div class="skill-tags">
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">GitHub</span>
+              <span class="skill-tag">Azure</span>
+              <span class="skill-tag">Jira</span>
+              <span class="skill-tag">Xcode</span>
+              <span class="skill-tag">Postman</span>
+              <span class="skill-tag">Jupyter</span>
+              <span class="skill-tag">MS SQL Server</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    var navToggle = document.getElementById("nav-toggle");
+    var navMenu = document.getElementById("nav-menu");
+    if (navToggle && navMenu) {
+      navToggle.addEventListener("click", function() { navMenu.classList.toggle("active"); });
+    }
+  </script>
+</body>
+</html>

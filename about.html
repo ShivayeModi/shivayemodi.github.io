@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Shivaye Modi</title>
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <div class="scanlines"></div>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">$ shivaye<span class="blink">_</span></a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="about.html" class="nav-link active"># about</a></li>
+        <li><a href="skills.html" class="nav-link"># skills</a></li>
+        <li><a href="experience.html" class="nav-link"># experience</a></li>
+        <li><a href="projects.html" class="nav-link"># projects</a></li>
+        <li><a href="contact.html" class="nav-link"># contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="section page-section">
+    <div class="container">
+      <h2 class="section-title"><span class="text-muted">#</span> about</h2>
+      <div class="about-grid">
+        <div class="about-image-wrapper">
+          <div class="terminal-window small">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+            </div>
+            <div class="terminal-body">
+              <img src="assets/img/profile.jpg" alt="Shivaye Modi" class="about-image" loading="lazy">
+            </div>
+          </div>
+        </div>
+        <div class="about-code">
+          <div class="terminal-window">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <span class="terminal-title">about.js</span>
+            </div>
+            <div class="terminal-body code-block">
+              <pre><code><span class="code-keyword">const</span> <span class="code-var">shivaye</span> = {
+  <span class="code-key">name</span>: <span class="code-string">"Shivaye Modi"</span>,
+  <span class="code-key">role</span>: <span class="code-string">"Software Development Engineer"</span>,
+  <span class="code-key">company</span>: <span class="code-string">"AMC Bridge Inc."</span>,
+  <span class="code-key">education</span>: [
+    <span class="code-string">"M.Sc. Physics - IIT Delhi"</span>,
+    <span class="code-string">"B.Sc. Physics - Panjab University"</span>
+  ],
+  <span class="code-key">interests</span>: [
+    <span class="code-string">"Software Development"</span>,
+    <span class="code-string">"Machine Learning"</span>,
+    <span class="code-string">"Computer Vision"</span>,
+    <span class="code-string">"CAD/CAM"</span>
+  ],
+  <span class="code-key">languages</span>: [<span class="code-string">"C#"</span>, <span class="code-string">"Python"</span>, <span class="code-string">"Swift"</span>, <span class="code-string">"JavaScript"</span>]
+};</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    var navToggle = document.getElementById("nav-toggle");
+    var navMenu = document.getElementById("nav-menu");
+    if (navToggle && navMenu) {
+      navToggle.addEventListener("click", function() { navMenu.classList.toggle("active"); });
+    }
+  </script>
+</body>
+</html>
