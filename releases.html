@@ -14,22 +14,23 @@
 
   <div class="scanlines"></div>
 
-  <!-- Navigation -->
   <nav class="navbar" id="navbar">
     <div class="nav-container">
       <a href="index.html" class="nav-logo">$ shivaye<span class="blink">_</span></a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
       <ul class="nav-menu" id="nav-menu">
-        <li><a href="index.html#about" class="nav-link"># about</a></li>
-        <li><a href="index.html#skills" class="nav-link"># skills</a></li>
-        <li><a href="index.html#experience" class="nav-link"># experience</a></li>
-        <li><a href="index.html#projects" class="nav-link"># projects</a></li>
-        <li><a href="index.html#contact" class="nav-link"># contact</a></li>
+        <li><a href="about.html" class="nav-link"># about</a></li>
+        <li><a href="skills.html" class="nav-link"># skills</a></li>
+        <li><a href="experience.html" class="nav-link"># experience</a></li>
+        <li><a href="projects.html" class="nav-link"># projects</a></li>
+        <li><a href="contact.html" class="nav-link"># contact</a></li>
       </ul>
     </div>
   </nav>
 
-  <!-- Releases Section -->
-  <section class="section" style="padding-top: 100px;">
+  <section class="section page-section">
     <div class="container">
       <h2 class="section-title"><span class="text-muted">#</span> releases</h2>
       <div class="terminal-window">
@@ -53,5 +54,12 @@
     </div>
   </section>
 
+  <script>
+    var navToggle = document.getElementById("nav-toggle");
+    var navMenu = document.getElementById("nav-menu");
+    if (navToggle && navMenu) {
+      navToggle.addEventListener("click", function() { navMenu.classList.toggle("active"); });
+    }
+  </script>
 </body>
 </html>
