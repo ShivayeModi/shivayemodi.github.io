@@ -66,16 +66,16 @@
   <!-- Navigation -->
   <nav class="navbar" id="navbar">
     <div class="nav-container">
-      <a href="#hero" class="nav-logo">$ shivaye<span class="blink">_</span></a>
+      <a href="index.html" class="nav-logo">$ shivaye<span class="blink">_</span></a>
       <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-menu" id="nav-menu">
-        <li><a href="#about" class="nav-link"># about</a></li>
-        <li><a href="#skills" class="nav-link"># skills</a></li>
-        <li><a href="#experience" class="nav-link"># experience</a></li>
-        <li><a href="#projects" class="nav-link"># projects</a></li>
-        <li><a href="#contact" class="nav-link"># contact</a></li>
+        <li><a href="about.html" class="nav-link"># about</a></li>
+        <li><a href="skills.html" class="nav-link"># skills</a></li>
+        <li><a href="experience.html" class="nav-link"># experience</a></li>
+        <li><a href="projects.html" class="nav-link"># projects</a></li>
+        <li><a href="contact.html" class="nav-link"># contact</a></li>
       </ul>
     </div>
   </nav>
@@ -99,279 +99,47 @@
         <p class="terminal-line"><span class="prompt">$</span> cat location.txt</p>
         <p class="hero-location"><span class="text-muted">location:</span> India</p>
         <div class="hero-cta">
-          <a href="#projects" class="btn btn-primary"><span class="prompt">></span> view_projects</a>
+          <a href="projects.html" class="btn btn-primary"><span class="prompt">></span> view_projects</a>
           <a href="https://drive.google.com/file/d/1bQAeHXa3nd88DLkQYo_QGOXFUhZO_8Bk/view?usp=sharing" target="_blank" class="btn btn-outline"><span class="prompt">></span> download_resume</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- About Section -->
-  <section id="about" class="section">
-    <div class="container">
-      <h2 class="section-title"><span class="text-muted">#</span> about</h2>
-      <div class="about-grid">
-        <div class="about-image-wrapper">
-          <div class="terminal-window small">
-            <div class="terminal-header">
-              <div class="terminal-dots">
-                <span class="dot red"></span>
-                <span class="dot yellow"></span>
-                <span class="dot green"></span>
-              </div>
-            </div>
-            <div class="terminal-body">
-              <img src="assets/img/profile.jpg" alt="Shivaye Modi" class="about-image" loading="lazy">
-            </div>
-          </div>
-        </div>
-        <div class="about-code">
-          <div class="terminal-window">
-            <div class="terminal-header">
-              <div class="terminal-dots">
-                <span class="dot red"></span>
-                <span class="dot yellow"></span>
-                <span class="dot green"></span>
-              </div>
-              <span class="terminal-title">about.js</span>
-            </div>
-            <div class="terminal-body code-block">
-              <pre><code><span class="code-keyword">const</span> <span class="code-var">shivaye</span> = {
-  <span class="code-key">name</span>: <span class="code-string">"Shivaye Modi"</span>,
-  <span class="code-key">role</span>: <span class="code-string">"Software Development Engineer"</span>,
-  <span class="code-key">company</span>: <span class="code-string">"AMC Bridge Inc."</span>,
-  <span class="code-key">education</span>: [
-    <span class="code-string">"M.Sc. Physics - IIT Delhi"</span>,
-    <span class="code-string">"B.Sc. Physics - Panjab University"</span>
-  ],
-  <span class="code-key">interests</span>: [
-    <span class="code-string">"Software Development"</span>,
-    <span class="code-string">"Machine Learning"</span>,
-    <span class="code-string">"Computer Vision"</span>,
-    <span class="code-string">"CAD/CAM"</span>
-  ],
-  <span class="code-key">languages</span>: [<span class="code-string">"C#"</span>, <span class="code-string">"Python"</span>, <span class="code-string">"Swift"</span>, <span class="code-string">"JavaScript"</span>]
-};</code></pre>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <script>
+    // Typing Animation
+    var roles = ["Software Engineer", "CAD Developer", "AI Enthusiast", "a Physics grad turned software developer"];
+    var roleIndex = 0, charIndex = 0, isDeleting = false;
+    var typingEl = document.getElementById("typing-text");
 
-  <!-- Skills Section -->
-  <section id="skills" class="section">
-    <div class="container">
-      <h2 class="section-title"><span class="text-muted">#</span> skills</h2>
-      <div class="terminal-window">
-        <div class="terminal-header">
-          <div class="terminal-dots">
-            <span class="dot red"></span>
-            <span class="dot yellow"></span>
-            <span class="dot green"></span>
-          </div>
-          <span class="terminal-title">skills.txt</span>
-        </div>
-        <div class="terminal-body">
-          <div class="skill-category">
-            <p class="terminal-line"><span class="prompt">$</span> cat languages.txt</p>
-            <div class="skill-tags">
-              <span class="skill-tag">C#</span>
-              <span class="skill-tag">Python</span>
-              <span class="skill-tag">Swift</span>
-              <span class="skill-tag">Objective-C</span>
-              <span class="skill-tag">JavaScript</span>
-              <span class="skill-tag">HTML/CSS</span>
-              <span class="skill-tag">SQL</span>
-            </div>
-          </div>
-          <div class="skill-category">
-            <p class="terminal-line"><span class="prompt">$</span> cat frameworks.txt</p>
-            <div class="skill-tags">
-              <span class="skill-tag">.NET</span>
-              <span class="skill-tag">WPF</span>
-              <span class="skill-tag">ASP.NET Core</span>
-              <span class="skill-tag">Entity Framework</span>
-              <span class="skill-tag">TensorFlow</span>
-              <span class="skill-tag">OpenCV</span>
-              <span class="skill-tag">NumPy</span>
-              <span class="skill-tag">Scikit-learn</span>
-            </div>
-          </div>
-          <div class="skill-category">
-            <p class="terminal-line"><span class="prompt">$</span> cat tools.txt</p>
-            <div class="skill-tags">
-              <span class="skill-tag">Git</span>
-              <span class="skill-tag">GitHub</span>
-              <span class="skill-tag">Azure</span>
-              <span class="skill-tag">Jira</span>
-              <span class="skill-tag">Xcode</span>
-              <span class="skill-tag">Postman</span>
-              <span class="skill-tag">Jupyter</span>
-              <span class="skill-tag">MS SQL Server</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    function typeRole() {
+      if (!typingEl) return;
+      var current = roles[roleIndex];
+      if (isDeleting) {
+        typingEl.textContent = current.substring(0, charIndex - 1);
+        charIndex--;
+      } else {
+        typingEl.textContent = current.substring(0, charIndex + 1);
+        charIndex++;
+      }
+      var delay = isDeleting ? 40 : 80;
+      if (!isDeleting && charIndex === current.length) {
+        delay = 2000; isDeleting = true;
+      } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        roleIndex = (roleIndex + 1) % roles.length;
+        delay = 400;
+      }
+      setTimeout(typeRole, delay);
+    }
+    typeRole();
 
-  <!-- Experience Section -->
-  <section id="experience" class="section">
-    <div class="container">
-      <h2 class="section-title"><span class="text-muted">#</span> experience</h2>
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="terminal-window">
-              <div class="terminal-header">
-                <div class="terminal-dots">
-                  <span class="dot red"></span>
-                  <span class="dot yellow"></span>
-                  <span class="dot green"></span>
-                </div>
-                <span class="terminal-title">amc-bridge.log</span>
-              </div>
-              <div class="terminal-body">
-                <p class="timeline-date"><span class="text-muted">[</span>2024-10 <span class="text-muted">→</span> Present<span class="text-muted">]</span></p>
-                <h3 class="timeline-company"><a href="https://www.amcbridge.com/" target="_blank">AMC Bridge Inc.</a></h3>
-                <p class="timeline-role">Software Development Engineer</p>
-                <ul class="timeline-list">
-                  <li><span class="prompt">></span> Implemented functionalities for various CAD plugins on Revit software</li>
-                  <li><span class="prompt">></span> Developed tools for automating CAD workflows in cloud</li>
-                  <li><span class="prompt">></span> Tech: C#, WPF, .NET, Revit, CAD/CAM, Autodesk Platform Services</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="terminal-window">
-              <div class="terminal-header">
-                <div class="terminal-dots">
-                  <span class="dot red"></span>
-                  <span class="dot yellow"></span>
-                  <span class="dot green"></span>
-                </div>
-                <span class="terminal-title">prototech.log</span>
-              </div>
-              <div class="terminal-body">
-                <p class="timeline-date"><span class="text-muted">[</span>2022-06 <span class="text-muted">→</span> 2024-09<span class="text-muted">]</span></p>
-                <h3 class="timeline-company"><a href="https://www.augmenify.com/" target="_blank">Prototech Solutions Pvt. Ltd.</a></h3>
-                <p class="timeline-role">Software Developer</p>
-                <ul class="timeline-list">
-                  <li><span class="prompt">></span> Developed .NET/WPF desktop app with CAD tools, reducing plot calculation time by 80%</li>
-                  <li><span class="prompt">></span> Built traverse and substructure algorithms for accurate plot boundaries</li>
-                  <li><span class="prompt">></span> Optimized peg length updates from 10s to &lt;1s</li>
-                  <li><span class="prompt">></span> Enhanced iOS AR app with media references (base64 images, videos, PDFs)</li>
-                  <li><span class="prompt">></span> Developed custom video player and PDF viewer for iOS app</li>
-                  <li><span class="prompt">></span> Tech: C#, WPF, .NET, Prism, ASP.NET Core, Entity Framework, Azure, Swift, ARKit</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="section">
-    <div class="container">
-      <h2 class="section-title"><span class="text-muted">#</span> projects</h2>
-      <div class="projects-grid">
-        <div class="terminal-window project-card">
-          <div class="terminal-header">
-            <div class="terminal-dots">
-              <span class="dot red"></span>
-              <span class="dot yellow"></span>
-              <span class="dot green"></span>
-            </div>
-            <span class="terminal-title">twitter-analysis</span>
-          </div>
-          <div class="terminal-body">
-            <div class="project-image-wrapper">
-              <img src="assets/img/project/twitteranalysis.jpg" alt="Twitter Post Analysis" class="project-image" loading="lazy">
-            </div>
-            <h3 class="project-title">Twitter Post Automation</h3>
-            <p class="project-desc">Automated Twitter posting and analysis tool using NLP and API integration.</p>
-            <div class="project-links">
-              <a href="projects/twitteranalysis.html" class="btn btn-small"><span class="prompt">></span> details</a>
-            </div>
-          </div>
-        </div>
-        <div class="terminal-window project-card">
-          <div class="terminal-header">
-            <div class="terminal-dots">
-              <span class="dot red"></span>
-              <span class="dot yellow"></span>
-              <span class="dot green"></span>
-            </div>
-            <span class="terminal-title">image-processing</span>
-          </div>
-          <div class="terminal-body">
-            <div class="project-image-wrapper">
-              <img src="assets/img/project/iras.jpeg" alt="Image Processing Project" class="project-image" loading="lazy">
-            </div>
-            <h3 class="project-title">Image Processing Project</h3>
-            <p class="project-desc">Computer vision and image processing applications using OpenCV and TensorFlow.</p>
-            <div class="project-links">
-              <a href="projects/iras.html" class="btn btn-small"><span class="prompt">></span> details</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="section">
-    <div class="container">
-      <h2 class="section-title"><span class="text-muted">#</span> contact</h2>
-      <div class="contact-grid">
-        <div class="terminal-window">
-          <div class="terminal-header">
-            <div class="terminal-dots">
-              <span class="dot red"></span>
-              <span class="dot yellow"></span>
-              <span class="dot green"></span>
-            </div>
-            <span class="terminal-title">contact.sh</span>
-          </div>
-          <div class="terminal-body">
-            <p class="terminal-line"><span class="prompt">$</span> cat contact.txt</p>
-            <p class="contact-info">Feel free to reach out for collaborations or just a friendly hello!</p>
-            <div class="contact-links">
-              <a href="mailto:shivayemodi@gmail.com" class="contact-link">
-                <span class="prompt">></span> email shivayemodi@gmail.com
-              </a>
-              <a href="https://www.linkedin.com/in/shivaye-modi-44a3631b2" target="_blank" class="contact-link">
-                <span class="prompt">></span> linkedin /in/shivaye-modi
-              </a>
-              <a href="https://www.github.com/ShivayeModi" target="_blank" class="contact-link">
-                <span class="prompt">></span> github /ShivayeModi
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="contact-visitor">
-          <p class="text-muted">Total visitors:</p>
-          <p class="visitor-count" id="visitor-count">...</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <p class="footer-text"><span class="prompt">$</span> echo "Built with <3 by Shivaye Modi" <span class="text-muted">|</span> &copy; 2026</p>
-    </div>
-  </footer>
-
-  <script src="assets/js/main.js"></script>
+    // Mobile Nav
+    var navToggle = document.getElementById("nav-toggle");
+    var navMenu = document.getElementById("nav-menu");
+    if (navToggle && navMenu) {
+      navToggle.addEventListener("click", function() { navMenu.classList.toggle("active"); });
+    }
+  </script>
 </body>
 </html>
