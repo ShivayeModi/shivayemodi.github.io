@@ -1,0 +1,14 @@
+{
+  "name": "shivayemodi-github-io",
+  "version": "1.0.0",
+  "description": "Portfolio website",
+  "scripts": {
+    "minify:css": "cleancss -o assets/css/style.min.css assets/css/style.css",
+    "minify:js": "uglifyjs assets/js/main.js -o assets/js/main.min.js -c -m",
+    "build": "npm run minify:css && npm run minify:js"
+  },
+  "devDependencies": {
+    "clean-css-cli": "^5.6.3",
+    "uglify-js": "^3.17.4"
+  }
+}
