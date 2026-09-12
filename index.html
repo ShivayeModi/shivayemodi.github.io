@@ -556,8 +556,15 @@
           </div>
         </div>
 
+        <div class="col-md-6 mt-4 d-flex align-items-stretch">
+          <div class="info-box">
+            <i class="bx bx-car"></i>
+            <h3>Visitors</h3>
+            <p id="visitor-count">Loading...</p>
+          </div>
+        </div>
+
       </div>
-      <!-- <div id="sfczmlqxr5caww28rswrt8849ghbekgnh3j" ></div><script type="text/javascript" src="https://counter1.stat.ovh/private/counter.js?c=zmlqxr5caww28rswrt8849ghbekgnh3j&down=async" async></script><noscript><a href="https://www.freecounterstat.com" title="free web counter"><img src="https://counter1.stat.ovh/private/freecounterstat.php?c=zmlqxr5caww28rswrt8849ghbekgnh3j" border="0" title="free web counter" alt="free web counter" style="visibility: none;"></a></noscript> -->
     </div>
   </section>
 
@@ -581,6 +588,20 @@
       typeSpeed: 85,
       backSpeed: 85
     });
+  </script>
+
+  <script>
+    (async function() {
+      try {
+        const domain = encodeURIComponent(window.location.hostname);
+        const timezone = encodeURIComponent(Intl.DateTimeFormat().resolvedOptions().timeZone);
+        const res = await fetch('https://visitor.6developer.com/visit?domain=' + domain + '&timezone=' + timezone);
+        const data = await res.json();
+        document.getElementById('visitor-count').textContent = data.totalCount;
+      } catch (e) {
+        document.getElementById('visitor-count').textContent = 'N/A';
+      }
+    })();
   </script>
 
   <!-- Template Main JS File -->
